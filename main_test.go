@@ -30,5 +30,5 @@ func TestHTMLHandler(t *testing.T) {
 
 	assert.Equal(t, http.StatusOK, w.Code)
 	assert.Equal(t, "text/html", w.Header().Get("Content-Type"))
-	assert.Contains(t, w.Body.String(), "<h1>Hello World !</h1>")
+	assert.Contains(t, w.Body.String(), "<h1>Hello World</h1>")
 }

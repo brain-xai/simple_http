@@ -13,7 +13,7 @@ func setupRouter() *gin.Engine {
 	})
 	r.GET("/html", func(c *gin.Context) {
 		c.Header("Content-Type", "text/html")
-		c.String(200, "<h1>Hello World !</h1>")
+		c.String(200, "<h1>Hello World</h1>")
 	})
 	return r
 }
