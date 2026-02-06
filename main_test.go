@@ -17,7 +17,7 @@ func TestRootHandler(t *testing.T) {
 	r.ServeHTTP(w, req)
 
 	assert.Equal(t, http.StatusOK, w.Code)
-	assert.Contains(t, w.Body.String(), "Hello World")
+	assert.Contains(t, w.Body.String(), "Hello World1")
 }
 
 func TestHTMLHandler(t *testing.T) {
